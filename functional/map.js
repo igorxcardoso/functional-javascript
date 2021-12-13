@@ -36,3 +36,10 @@ const getScores = (el) => {
 scores = students.map(getScores).map(Math.ceil)
 
 console.log(scores)
+
+
+// Data of the map function
+const mapData = numbers.map((element, index, array) => {
+    return [element, index, array];
+});
+console.log(mapData);
