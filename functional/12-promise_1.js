@@ -35,5 +35,5 @@ myPromise
         .then(getFirst)
         .then(getFirst)
         // .then(v => console.log(v))
-        .then(getSecond)
+        // .then(getSecond)
         .then(v => console.log(v))
