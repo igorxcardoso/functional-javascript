@@ -6,5 +6,10 @@ store = [
     {name: 'Blusa', quantity: 0, price: 32.2}
 ];
 
-const notZero = item => item.quantity > 0
-console.log(store.filter(notZero))
+// Filter the array by quantity bigger then 0
+const notZero = item => item.quantity > 0;
+const getNames = item => item.name;
+
+console.log(store
+                .filter(notZero)
+                .map(getNames))
