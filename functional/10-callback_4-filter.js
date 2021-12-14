@@ -13,3 +13,22 @@ const getNames = item => item.name;
 console.log(store
                 .filter(notZero)
                 .map(getNames))
+
+
+console.log('\n-------- My Filter --------\n');
+
+// I can acess the array through 'this'
+Array.prototype.myFilter = function(fn) {
+    const newArray = []
+    for(let i = 0; i < this.length; i++) {
+        if(fn(this[i], i, this)) {
+            newArray.push(this[i])
+        }
+    }
+
+    return newArray;
+}
+
+console.log(store
+                .myFilter(notZero)
+                .map(getNames))

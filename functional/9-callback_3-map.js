@@ -42,12 +42,23 @@ console.log(quantity)
 console.log(total)
 
 
-console.log('---------- My Map Function ----------')
+console.log('\n---------- My Map Function ----------\n')
 
 Array.prototype.myMap = function(fn) {
     const newArray = []
-    for(let i = 0; i < thisArray.length; i++) {
-        result = fn(thisArray[i], i, thisArray)
+    for(let i = 0; i < this.length; i++) {
+        const result = fn(this[i], i, this)
         newArray.push(result)
     }
+    return newArray;
 }
+
+const names2 = loja.myMap(getName);
+const prices2 = loja.myMap(getPrice);
+const quantity2 = loja.myMap(getQuantity);
+const total2 = loja.myMap(getTotal);
+
+console.log(names2)
+console.log(prices2)
+console.log(quantity2)
+console.log(total2)
