@@ -1,7 +1,7 @@
 // Promise is a function
 
-let a = 1
 
+// Promise(function)
 let myPromise = new Promise(function(keepPromise) {
     // The promise pass only value, for pass many values you need create a object
     // keepPromise({
