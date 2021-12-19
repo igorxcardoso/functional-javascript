@@ -13,6 +13,7 @@ let myPromise = new Promise(function(keepPromise) {
 
 console.log(typeof myPromise);
 console.log(myPromise);
+console.log('----------------');
 
 // For acess the values in the promise
 // The method 'then' receive a function too
@@ -33,7 +34,7 @@ const getSecond = arrayOrObject => arrayOrObject[1];
 
 myPromise
         .then(getFirst)
-        .then(getFirst)
+        .then(v => console.log(v))  // Vai pegar o retorno da chamada de cima
+        // .then(getFirst)
         // .then(v => console.log(v))
         // .then(getSecond)
-        .then(v => console.log(v))

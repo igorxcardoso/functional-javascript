@@ -13,10 +13,10 @@
 
 
 function waitFor(time = 2000) {
-    return new Promise(function(keepPromise) {
+    return new Promise(function(resolve) {
         setTimeout(() => {
             console.log('Running promise...', time)
-            keepPromise('XXXX')
+            resolve('XXXX')
         }, time)
     })
 }
@@ -25,4 +25,6 @@ function waitFor(time = 2000) {
 waitFor()
         .then(() => waitFor(3000))
         .then(() => waitFor())
-        // .then(v => console.log(v))
+        .then(v => console.log(v))  // Print the resolve()
+
+// Vai chamar waitFor() que retorna uma Proise
