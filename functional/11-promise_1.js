@@ -32,6 +32,7 @@ console.log('----------------');
 const getFirst = arrayOrObject => arrayOrObject[0];
 const getSecond = arrayOrObject => arrayOrObject[1];
 
+// O resultado de um método then é passado para a outra chamada do método
 myPromise
         .then(getFirst)
         .then(v => console.log(v))  // Vai pegar o retorno da chamada de cima
