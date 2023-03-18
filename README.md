@@ -4,4 +4,4 @@ This repository is intended to address the importance of JavaScript functions, t
 
 ## Author
 
-* **Igor Cardoso** - *Initial work* - [ig-cardoso](https://github.com/ig-cardoso)
+* **Igor Cardoso** - *Initial work* - [igorxcardoso](https://github.com/igorxcardoso)
